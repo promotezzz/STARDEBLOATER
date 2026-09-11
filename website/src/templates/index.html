@@ -67,17 +67,18 @@
       opacity: 0.85;
     }
 
-    /* DEATH STAR IN SPACE - MASSIVE ON THE LEFT, AIMING RIGHT */
+    /* DEATH STAR IN SPACE - PROPERLY FRAMED, FACING RIGHT */
     .deathstar-space {
       position: fixed;
       top: 50%;
-      left: clamp(-460px, -18vw, -140px);
-      transform: translateY(-50%) scaleX(-1) rotate(22deg);
-      width: clamp(750px, 70vw, 1400px);
-      height: auto;
-      opacity: 0.65;
-      filter: drop-shadow(0 0 130px rgba(255, 30, 39, 0.45));
-      animation: spaceFloat 12s ease-in-out infinite alternate;
+      left: clamp(-140px, -5vw, -20px);
+      transform: translateY(-50%) scaleX(-1) rotate(-4deg);
+      height: min(90vh, 860px);
+      width: auto;
+      max-width: 55vw;
+      opacity: 0.85;
+      filter: drop-shadow(0 0 100px rgba(255, 30, 39, 0.4));
+      animation: spaceFloat 10s ease-in-out infinite alternate;
       user-select: none;
       pointer-events: none;
       z-index: 1;
@@ -85,10 +86,10 @@
 
     @keyframes spaceFloat {
       0% {
-        transform: translateY(-50%) scaleX(-1) rotate(20deg);
+        transform: translateY(-50%) scaleX(-1) rotate(-4deg);
       }
       100% {
-        transform: translateY(-53%) scaleX(-1) rotate(24deg);
+        transform: translateY(-51.5%) scaleX(-1) rotate(-2deg);
       }
     }
 
@@ -96,12 +97,12 @@
     .card {
       position: relative;
       z-index: 10;
-      max-width: 520px;
+      max-width: 500px;
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: rgba(6, 6, 10, 0.78);
+      background: rgba(6, 6, 10, 0.82);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border: 1px solid rgba(255, 30, 39, 0.4);
@@ -113,7 +114,7 @@
     @media (min-width: 1050px) {
       body {
         justify-content: flex-end;
-        padding-right: clamp(40px, 12vw, 200px);
+        padding-right: clamp(60px, 12vw, 220px);
       }
     }
 
