@@ -1,33 +1,27 @@
-﻿# stardebloat
+# stardebloat
 
-[![GitHub Release](https://img.shields.io/github/v/release/Raphire/stardebloat?style=for-the-badge&label=Latest%20release)](https://github.com/Raphire/stardebloat/releases/latest)
-[![Join the Discussion](https://img.shields.io/badge/Join-the%20Discussion-2D9F2D?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Raphire/stardebloat/discussions)
-[![Static Badge](https://img.shields.io/badge/Documentation-_?style=for-the-badge&logo=bookstack&color=grey)](https://github.com/Raphire/stardebloat/wiki/)
+[![GitHub Release](https://img.shields.io/github/v/release/promotezzz/STARDEBLOATER?style=for-the-badge&label=Latest%20release)](https://github.com/promotezzz/STARDEBLOATER/releases/latest)
+[![Join the Discussion](https://img.shields.io/badge/Join-the%20Discussion-2D9F2D?style=for-the-badge&logo=github&logoColor=white)](https://github.com/promotezzz/STARDEBLOATER/discussions)
+[![Static Badge](https://img.shields.io/badge/Documentation-_?style=for-the-badge&logo=bookstack&color=grey)](https://github.com/promotezzz/STARDEBLOATER/wiki/)
 
  stardebloat is a lightweight, easy to use PowerShell script that allows you to quickly declutter and customize your Windows experience, no installation required! You can use it to remove pre-installed apps, disable telemetry, remove intrusive interface elements and much more. No need to painstakingly go through all the settings yourself or remove apps one by one. stardebloat makes the process quick and easy!
 
-The script also includes many features that system administrators and power users will enjoy. Such as a powerful command-line interface, support for Windows Audit mode and the ability to make changes to other Windows users. You can also easily export & import your preferred settings, allowing you to quickly apply the same settings on all your systems. Please refer to our [wiki](https://github.com/Raphire/stardebloat/wiki) for more details.
-
-![stardebloat Menu](/Assets/Images/menu.png)
-
-#### Did this script help you? Please consider buying me a cup of coffee to support my work
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M5C6UPC)
+The script also includes many features that system administrators and power users will enjoy. Such as a powerful command-line interface, support for Windows Audit mode and the ability to make changes to other Windows users. You can also easily export & import your preferred settings, allowing you to quickly apply the same settings on all your systems. Please refer to our [wiki](https://github.com/promotezzz/STARDEBLOATER/wiki) for more details.
 
 ## Usage
 
 > [!Warning]
-> Great care went into making sure this script does not unintentionally break any OS functionality, but use at your own risk! If you run into any issues, please report them [here](https://github.com/Raphire/stardebloat/issues).
+> Great care went into making sure this script does not unintentionally break any OS functionality, but use at your own risk! If you run into any issues, please report them [here](https://github.com/promotezzz/STARDEBLOATER/issues).
 
 ### Quick method
 
 Download & run the script automatically via PowerShell.
 
-1. Open PowerShell or Terminal.
+1. Open PowerShell or Terminal as Administrator.
 2. Copy and paste the command below into PowerShell:
 
 ```PowerShell
-& ([scriptblock]::Create((irm "https://debloat.raphi.re/")))
+& ([scriptblock]::Create((irm "https://raw.githubusercontent.com/promotezzz/STARDEBLOATER/main/Scripts/Get.ps1")))
 ```
 
 3. Wait for the script to automatically download and launch stardebloat.
