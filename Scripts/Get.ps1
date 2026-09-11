@@ -1,4 +1,4 @@
-﻿param (
+param (
     [switch]$Verbose,
     [switch]$WhatIf,
     [switch]$Dev,
@@ -126,9 +126,9 @@ Write-Output "> Downloading stardebloat..."
 # Download stardebloat from GitHub as a zip archive.
 try {
     if ($Dev) {
-        $sourceUri = "https://github.com/Raphire/stardebloat/archive/refs/heads/master.zip"
+        $sourceUri = "https://github.com/promotezzz/STARDEBLOATER/archive/refs/heads/main.zip"
     } else {
-        $sourceUri = (Invoke-RestMethod https://api.github.com/repos/Raphire/stardebloat/releases/latest).zipball_url
+        $sourceUri = "https://github.com/promotezzz/STARDEBLOATER/archive/refs/heads/main.zip"
     }
     Invoke-RestMethod $sourceUri -OutFile $tempArchivePath
 }
@@ -176,8 +176,7 @@ Expand-Archive $tempArchivePath $tempWorkPath
 # Remove archive
 Remove-Item $tempArchivePath
 
-# Move files
-Get-ChildItem -Path (Join-Path $tempWorkPath '*stardebloat-*') -Recurse | Move-Item -Destination $tempWorkPath
+Get-ChildItem -Path (Join-Path $tempWorkPath '*stardebloat*'), (Join-Path $tempWorkPath '*STARDEBLOATER*') -Directory | Get-ChildItem | Move-Item -Destination $tempWorkPath -Force -ErrorAction SilentlyContinue
 
 # Add existing config files back to Config folder
 if (Test-Path "$backupDir") {
